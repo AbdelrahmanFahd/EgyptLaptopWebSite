@@ -1,0 +1,38 @@
+<suite name="Test EgyptLaptop WebSite" verbose="1">
+    <parameter name="email" value="Mawadda103392372379@test.com"/>
+    <parameter name="password" value="test12345678"/>
+    <test name="ChromeTest">
+        <parameter name="browser" value="Chrome"/>
+        <classes>
+            <class name="SearchTest"/>
+            <class name="RegistrationTest"/>
+            <class name="AddingItemsToTheCartTest"/>
+            <class name="RemovingItemsFromCartTest"/>
+            <class name="CompletingPurchasesTest"/>
+        </classes>
+    </test>
+    <test name="FireFoxTest">
+        <parameter name="browser" value="FireFox"/>
+        <classes>
+            <class name="SearchTest"/>
+            <class name="RegistrationTest"/>
+            <class name="AddingItemsToTheCartTest"/>
+            <class name="RemovingItemsFromCartTest"/>
+            <class name="CompletingPurchasesTest"/>
+        </classes>
+    </test>
+    <test name="EdgeTest">
+        <parameter name="browser" value="Edge"/>
+        <classes>
+            <class name="SearchTest"/>
+            <class name="RegistrationTest"/>
+            <class name="AddingItemsToTheCartTest"/>
+            <class name="RemovingItemsFromCartTest"/>
+            <class name="CompletingPurchasesTest"/>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    </listeners>
+</suite>
+
